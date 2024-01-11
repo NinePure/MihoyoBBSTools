@@ -48,5 +48,4 @@ games:
 cloud_games: #云游戏专区
   genshin: #云原神
     enable: true #开启签到
-    token: "ai=4;ci=1;oi=161253834;ct=v2_ca828b831d1fed7aedbad00b2c73b8242ba21670;si=90254f5407fa6cf33d4663510e08dc244f5e13ad0ac18bced991e4b01fa0d786;bi=hk4e_cn
-" #这里填入抓包获得的token
+    token: "ai=4;ci=1;oi=161253834;ct=v2_ca828b831d1fed7aedbad00b2c73b8242ba21670;si=90254f5407fa6cf33d4663510e08dc244f5e13ad0ac18bced991e4b01fa0d786;bi=hk4e_cn" #这里填入抓包获得的token

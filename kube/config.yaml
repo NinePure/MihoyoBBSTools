@@ -1,12 +1,12 @@
 enable: true #这里控制整个config文件是否启用
 version: 9 #config的版本
 account:
-  cookie: "" #登入账号只需要修改这里就行了，下面会自动获取
+  cookie: "cookie_token_v2=v2_KnUvmOJtfOgmOVMhQtfASigquFNscdsAh0uZmnO9z_fOynh4To9XegeyuYA6ci-HinyOhKAv0pL6VVhHA7qemNZn4RjJda3t0OK17YNkmbBgJV8WxIPeTOO3M2OB_RYTL4Mn5Awws3CtEN8=; account_mid_v2=0xopckx01i_mhy; account_id_v2=161253834; ltoken_v2=v2_R173X0SorDHuN2_U-VnPSVs9uVZZDTyp86uSduuLCr72P6pKJTZBLR91WglwbOLaR8FSmpIGP6xzGbwGUYIxFu64BQXavFUd77VVEZ1YNhxNulxEcl2ZVXh4Qsoxk0DM0XyuXjkqXAzo6S0=; ltmid_v2=0xopckx01i_mhy; ltuid_v2=161253834; cookie_token=5WiHGbsyg9BYZrbqS6E6FLIHWcLfnQ2gvVGZC6k7; account_id=161253834; ltoken=ZSZbZ9NZR4ePHksmpuNwvWKjl3tw0zNLmOjRKRjr; ltuid=161253834; mi18nLang=zh-cn; _MHYUUID=f5069603-b5c6-4857-a2c0-997c6db92a5e; DEVICEFP_SEED_ID=8c81fff8ef0547f3; DEVICEFP_SEED_TIME=1696065441302; LOGIN_PLATFORM_COMMON_TRACE_INFO={%22webapp_lifecycle_id%22:%223ef88e7c-c697-4fca-9979-c1ec6fec07e2%22}; LOGIN_PLATFORM_COMMON_INFO={%22lifecycle_id%22:%2217e6354d-374b-4132-9f01-a6a337ab71b9%22}; LOGIN_PLATFORM_SWITCH_STATUS={%22c76ync6mutq8%22:{%22pwd_login_tab%22:true%2C%22password_reset_entry%22:true%2C%22qr_login%22:false%2C%22sms_login_tab%22:true}}; DEVICEFP=38d7f3bdd81cd; MIHOYO_LOGIN_PLATFORM_LIFECYCLE_ID=8051edf6a4; MIHOYO_LOGIN_PLATFORM_SWITCH_STATUS={%22c76ync6mutq8%22:{%22password_reset_entry%22:true%2C%22qr_login%22:false%2C%22sms_login_tab%22:true%2C%22pwd_login_tab%22:true}}; MIHOYO_LOGIN_PLATFORM_COMMON_TRACE_INFO={%22webapp_lifecycle_id%22:%22b82656e6-d0c1-49e0-8394-c48c51da14ba%22}; cookie_token=5WiHGbsyg9BYZrbqS6E6FLIHWcLfnQ2gvVGZC6k7; account_id=161253834; ltuid=161253834; account_mid_v2=0xopckx01i_mhy; account_id_v2=161253834; ltmid_v2=0xopckx01i_mhy; ltuid_v2=161253834; login_uid=161253834; login_ticket=WIkSbUF1ty04oFJaJnPhUJPQzRwsTUbFpfXmf6wW" #登入账号只需要修改这里就行了，下面会自动获取
   login_ticket: ""
   stuid: ""
   stoken: ""
 mihoyobbs:
-  enable: true #控制bbs功能是否启用
+  enable: false #控制bbs功能是否启用
   checkin: true #社区签到
   checkin_multi: true #多个社区签到，关闭后只签到大别野
   checkin_multi_list: #签到的社区列表 详情可以看config文件夹下面的readme
@@ -19,7 +19,7 @@ mihoyobbs:
 games:
   cn: #国服控制区域
     enable: true #控制是否启用国内签到
-    useragent: "Mozilla/5.0 (Linux; Android 12; Unspecified Device) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36"
+    useragent: "Mozilla/5.0 (Linux; U; Android 13; zh-cn; 2206123SC Build/TKQ1.220829.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.118 Mobile Safari/537.36 XiaoMi/MiuiBrowser/17.9.161211 swan-mibrowser"
     #配置签到用的ua 脚本会在后面自动加上miHoYoBBS/版本号 ,请复制的时候不要带miHoYoBBS/版本
     genshin: #原神自动签到
       auto_checkin: true #控制是否启用签到，下面一致
@@ -34,7 +34,7 @@ games:
       auto_checkin: false
       black_list: []
     honkai_sr: # 崩坏: 星穹铁道
-      auto_checkin: false
+      auto_checkin: true
       black_list: []
   os: #外服控制区域
     enable: false
@@ -47,5 +47,6 @@ games:
       black_list: []
 cloud_games: #云游戏专区
   genshin: #云原神
-    enable: false #开启签到
-    token: "" #这里填入抓包获得的token
+    enable: true #开启签到
+    token: "ai=4;ci=1;oi=161253834;ct=v2_ca828b831d1fed7aedbad00b2c73b8242ba21670;si=90254f5407fa6cf33d4663510e08dc244f5e13ad0ac18bced991e4b01fa0d786;bi=hk4e_cn
+" #这里填入抓包获得的token
